@@ -1,0 +1,124 @@
+
+body {
+  width: 70%;
+  margin: auto;
+  /*border: thin solid rgb(89, 77, 150);*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { 
+  font-size: 2em;
+  border-bottom-style: solid;
+  padding-bottom: 7%;
+}
+
+/* here I tried using main element as a flexbox  */
+
+main {
+  display: flex;
+  /*flex-direction: row;  default 
+  justify-content: center;*/
+}
+
+.header_section {
+  text-align: center;
+}
+
+.header_section img {
+  border-radius: 50%;
+  width: 85%;
+}
+
+.personel_info {
+  /*float: left; */
+  width: 30%;
+  /*display: flex;
+  flex-direction: column;
+  align-content: space-evenly;*/
+  background-color: rgb(89, 77, 150);
+  color: antiquewhite;
+  text-align: center;
+}
+
+.personel_info h3 {
+  width: 80%;
+  background-color: rgb(18, 208, 255);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.personel_info section {
+  margin-top: 20%;
+}
+
+.personel_info p {
+  text-align: justify;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.personel_info table , ul {
+  text-align: left;
+  padding-left: 7%;
+}
+
+.hobbies {
+  list-style-type: disc;
+  margin-left: 7%;
+  line-height: 1.5em;
+}
+
+.profession_info {
+  /*float: left; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  background-color: white;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+.profession_info h3 {
+  width: 85%;
+  margin-left: 10%;
+  background-color: rgb(18, 208, 255);
+  color: aliceblue;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5%;
+}
+
+.year {
+  float: left;
+  width: 25%; 
+  padding-left: 10%;
+}
+
+.float_right {
+  float: right;
+  width: 60%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.float_right h4 {
+  line-height: 0em;
+}
+
+.items_side_by_side {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.additional {
+  padding-left: 10%;
+}
+
+.items_side_by_side a:visited {
+  color: black;
+}
