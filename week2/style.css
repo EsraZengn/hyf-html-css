@@ -1,0 +1,99 @@
+body {
+  background-color: cornsilk;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {  list-style: none;  padding: 0%; }
+
+header , h2 , h3 {  text-align: center; color: #153450; }
+
+header {
+  font-size: 2rem;
+  text-shadow: 4px 4px 2px #447294;
+  animation: changecolor 3s linear 1s infinite alternate; /* name |duration |timingfunction |delay |iterationcount |direction*/
+}
+
+@keyframes changecolor {
+  from {color:#153450; }
+  to {color: #8FBCDB; }
+}
+
+h2 {
+  border: 2px solid #447294;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #153450;
+  background-color: #F4D6BC;
+  padding: 1rem;
+}
+
+img {
+  width: 80%;
+  position: relative;
+  padding-left: 10%;
+}
+
+.grid-item {
+  border: 1px solid #8FBCDB;
+  border-radius: 5px;
+  background-color: #F4D6BC;
+  text-align: justify;
+  padding:  calc(1% - 1px);
+  margin: 3% 1%;  
+}
+
+.grid-item:hover { box-shadow: 1px 1px 5px 5px #153450; } /* offset-x |offset-y |blur-radius |spread-radius |color */
+
+#grid-floats li{
+  float: left;
+  height: 550px;
+} 
+
+/*this property is used to stop floating of the elements of grid-flex section */
+
+#grid-floats::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1025px) {     /* for desktops */
+  li {
+    width: 21%;
+  }
+  li:nth-child(1) {
+    width: 46%;
+    box-shadow: 1px 1px 2px 2px #153450; 
+  }
+  li:nth-child(1) h3 {
+    color: #990033;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {       /* for tablets */
+  li{
+    width: 29.3%;
+  }
+  li:nth-child(-n+2) {
+    width: 46%;
+    box-shadow: 1px 1px 2px 2px #153450;
+  }  
+  li:nth-child(-n+2) h3 {
+    color: #990033;
+  }
+}
+@media (max-width: 767px) {       /* for smartphones  */
+  li{
+    width: 46%
+  }
+  li:nth-child(1) {
+    width: 96%;
+    box-shadow: 1px 1px 2px 2px #153450;
+  }
+  li:nth-child(1) h3 {
+    color: #990033;
+  }
+}
