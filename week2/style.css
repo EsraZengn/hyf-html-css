@@ -3,9 +3,15 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul {  list-style: none;  padding: 0%; }
+ul {  
+  list-style: none;  
+  padding: 0%; 
+}
 
-header , h2 , h3 {  text-align: center; color: #153450; }
+header , h2 , h3 {  
+  text-align: center; 
+  color: #153450; 
+}
 
 header {
   font-size: 2rem;
@@ -41,7 +47,9 @@ img {
   margin: 3% 1%;  
 }
 
-.grid-item:hover { box-shadow: 1px 1px 5px 5px #153450; } /* offset-x |offset-y |blur-radius |spread-radius |color */
+.grid-item:hover { 
+  box-shadow: 1px 1px 5px 5px #153450; /* offset-x |offset-y |blur-radius |spread-radius |color */
+} 
 
 #grid-floats li{
   float: left;
@@ -73,6 +81,7 @@ img {
     color: #990033;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {       /* for tablets */
   li{
     width: 29.3%;
@@ -85,6 +94,7 @@ img {
     color: #990033;
   }
 }
+
 @media (max-width: 767px) {       /* for smartphones  */
   li{
     width: 46%
