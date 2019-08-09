@@ -302,6 +302,15 @@ header {
   padding:25px 15px 50px 15px;
 }
 
+.headerImage .wrapper:before, .headerImage .wrapper:after {
+  content: " ";
+  display: table;
+}
+
+.headerImage .wrapper:after {
+  clear: both;
+}
+
 .headerImage .wrapper a {
   display:block;
   text-decoration:none;
@@ -325,15 +334,15 @@ header {
 }
 
 .headerImage .wrapper .topNavList ul li a {
-    position: relative;
-    display: block;
-    padding-left: 20px;
-    font-weight: bold;
-    font-size: 1.125rem;
-    line-height: 1.625rem;
-    width: auto;
-    line-height: 1.625rem;
-    word-wrap: break-word;
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  width: auto;
+  line-height: 1.625rem;
+  word-wrap: break-word;
 }
 
 .headerImage .wrapper .topNavList ul li a::before {
@@ -577,9 +586,9 @@ footer .wrapper {
 @media(min-width:348px) {
 
   .headerImage .copyright {
-   bottom:0;
-   padding:7px 0 0 16px;
-   font-size:.8em;
+    bottom:0;
+    padding:7px 0 0 16px;
+    font-size:.8em;
   }
 
   .navItem {
@@ -594,7 +603,7 @@ footer .wrapper {
 @media(min-width:480px) {
 
   .headerImage .slide .copyright {
-   padding:7px 0 0 16px;
+    padding:7px 0 0 16px;
   }
 
   .tileItem {
@@ -694,7 +703,7 @@ footer .wrapper {
 
   .headerImage {
     margin:0;
-   }
+  }
 
   .headerImage.smallHeaderImage {
     min-height: 210px;
@@ -753,8 +762,8 @@ footer .wrapper {
   }
 
   .tileItem {
-  width: 33.33333%;
-  margin: 0 0 60px 0;
+    width: 33.33333%;
+    margin: 0 0 60px 0;
   }
 
   .more {
@@ -766,7 +775,7 @@ footer .wrapper {
   }
 
   .service {
-  margin-left: 58.33333%;
+    margin-left: 58.33333%;
   }
 
   footer .wrapper {
